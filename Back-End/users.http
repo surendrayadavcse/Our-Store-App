@@ -1,0 +1,43 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name":"surendra",
+    "email":"surendra@123",
+    "password":"surendra"
+}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name":"hari",
+    "email":"hari@123",
+    "password":"hari"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+   
+    "email":"surendra@123",
+    "password":"surendra"
+}
+###
+
+GET http://localhost:3000/products
+###
+
+POST http://localhost:3000/api/cart
+Content-Type: application/json
+
+{
+    "userId":"66f4390cfb82a7bbc258e319",
+    "productId":"66f452f0853563867bae62db",
+    "quantity":1
+}
+
+###
+
+GET http://localhost:3000/api/cart?userId=66f4390cfb82a7bbc258e319
